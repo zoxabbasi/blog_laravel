@@ -1,10 +1,10 @@
-<footer class="bg-gray-800 py-20 mt-20">
-    <div class="sm:grid grid-cols-3 w-4/5 pb-10 m-auto border-b-2 border-gray-700">
+<footer class="py-20 mt-20 bg-gray-800">
+    <div class="w-4/5 grid-cols-3 pb-10 m-auto text-center border-b-2 border-gray-700 sm:grid">
         <div>
-            <h3 class="text-l sm:font-bold text-gray-100">
+            <h3 class="text-gray-100 text-l sm:font-bold">
                 Pages
             </h3>
-            <ul class="py-4  sm:text-s pt-4 text-gray-400">
+            <ul class="py-4 pt-4 text-gray-400 sm:text-s">
                 <li class="pb1 ">
                     <a href="/">Home</a>
                 </li>
@@ -20,10 +20,10 @@
             </ul>
         </div>
         <div>
-            <h3 class="text-l sm:font-bold text-gray-100">
+            <h3 class="text-gray-100 text-l sm:font-bold">
                 Find Us
             </h3>
-            <ul class="py-4  sm:text-s pt-4 text-gray-400">
+            <ul class="py-4 pt-4 text-gray-400 sm:text-s">
                 <li class="pb1 ">
                     <a href="/">What we do</a>
                 </li>
@@ -39,10 +39,10 @@
             </ul>
         </div>
         <div>
-            <h3 class="text-l sm:font-bold text-gray-100">
+            <h3 class="text-gray-100 text-l sm:font-bold">
                 Latest Posts
             </h3>
-            <ul class="py-4  sm:text-s pt-4 text-gray-400">
+            <ul class="py-4 pt-4 text-gray-400 sm:text-s">
                 <li class="pb1 ">
                     <a href="/">Why we love tech</a>
                 </li>
@@ -57,7 +57,8 @@
                 </li>
             </ul>
         </div>
-        <p class="w-25 w-4/5 pb-3 m-auto text-xs text-gray-100 pt-6">
-            Copyright 2022 Talal Abbasi. All Rights Reserved.</p>
     </div>
+    <p class="w-4/5 pt-6 pb-3 m-auto text-xs text-center text-gray-100">
+        Copyright 2022 Talal Abbasi. All Rights Reserved.
+    </p>
 </footer>

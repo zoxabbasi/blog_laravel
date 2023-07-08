@@ -15,11 +15,17 @@ use App\Http\Controllers\ProfileController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [PagesController::class, 'index']);
+Route::get('/', [PagesController::class, 'index'])->name('homepage');
 
-Route::get('/blog', [PostsController::class, 'index'])->name('blog');
-Route::get('/blog/create', [PostsController::class, 'create'])->name('blog.create');
-Route::post('/blog/', [PostsController::class, 'store']);
+Route::controller(PostsController::class)->group( function () {
+    Route::get('/blog','index')->name('blog');
+    Route::get('/blog/create', 'create')->name('blog.create');
+    Route::post('/blog', 'store');
+    Route::get('/blog/{slug}', 'show')->name('blog.show');
+    Route::get('/blog/{slug}/edit', 'edit')->name('blog.edit');
+    Route::post('/blog/{slug}', 'update');
+    Route::get('/blog/{slug}/destroy', 'destroy');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
