@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="w-4/5 m-auto text-left">
+    <div class="w-4/5 m-auto mt-10 text-center">
+        <div class="flex justify-center">
+            <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg" width="700" alt="">
+        </div>
         <div class="py-10 border-b">
             <h1 class="text-6xl text-gray-600">
                 {{ $post->title }}

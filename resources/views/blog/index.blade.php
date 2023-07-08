@@ -10,11 +10,6 @@
     </div>
 
     @if (session()->has('message'))
-        {{-- <div class="w-4/5 pl-2 m-auto mt-10">
-            <p class="w-2/6 py-4 mb-4 bg-green-500 text-gray-50 rounded-2xl">
-                {{ session()->get('message') }}
-            </p>
-        </div> --}}
         <div class="w-4/5 p-10 m-auto">
             <div class="relative block w-full p-4 text-base leading-5 text-white bg-red-500 rounded-lg opacity-100 font-regular"
                 data-dismissible="alert">
